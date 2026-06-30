@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Be Grace｜カラダから整える、わたしのセルフケア</title>
-<meta name="description" content="がんばってきたカラダを、やさしく整える。姿勢・呼吸・めぐりが整うと、心まで軽くなる。Be Grace のセルフケア。" />
-<meta name="theme-color" content="#d98aa6" />
-<meta property="og:title" content="Be Grace｜カラダから整えるセルフケア" />
-<meta property="og:description" content="カラダを整えると、心まで、ふっとゆるむ。" />
+<title>Be Grace｜あなただけの、カラダの読み解き</title>
+<meta name="description" content="カラダの声診断を受けたあなたへ。文章で届けられるのはここまで。あなたの体そのものを、直接読み解く個別相談へ。" />
+<meta name="theme-color" content="#d2789a" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -19,139 +17,183 @@
       radial-gradient(120% 70% at 50% -6%, #fff6f9 0%, rgba(255,255,255,0) 45%),
       linear-gradient(165deg, #fdeef3 0%, #f7dbe6 46%, #f0c8d9 100%);
     background-attachment:fixed; }
-  .wrap{ max-width:560px; margin:0 auto; padding:0 0 60px; }
+  .wrap{ max-width:540px; margin:0 auto; padding:0 0 56px; }
   .sec{ background:var(--card); margin:0 14px 16px; border:1px solid rgba(255,255,255,.7); border-radius:22px;
     box-shadow:0 18px 45px -28px rgba(150,90,110,.4); padding:30px 24px; }
 
-  .hero{ text-align:center; padding:60px 24px 30px; }
+  /* ① ヒーロー（肯定） */
+  .hero{ text-align:center; padding:56px 24px 26px; }
   .hero .brand{ font-family:"Cormorant Garamond",serif; font-style:italic; font-weight:500; font-size:30px; letter-spacing:.05em; color:var(--accent); }
-  .hero .ph{ width:112px; height:112px; border-radius:50%; margin:18px auto 4px; position:relative; overflow:hidden;
-    background:linear-gradient(160deg,var(--accent2),var(--accent)); box-shadow:0 12px 28px -10px var(--accent); }
-  .hero .ph .em{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:38px; color:#fff; }
-  .hero .ph img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .hero h1{ font-size:clamp(23px,6vw,30px); font-weight:600; letter-spacing:.04em; line-height:1.7; margin:18px 0 0; }
+  .hero .eyebrow{ margin-top:14px; font-size:12px; letter-spacing:.28em; color:var(--ink-soft); }
+  .hero h1{ font-size:clamp(22px,5.6vw,28px); font-weight:600; letter-spacing:.03em; line-height:1.75; margin:14px 0 0; }
   .hero h1 .em{ color:var(--accent); }
-  .hero .lead{ margin-top:18px; font-size:14.5px; color:var(--ink-soft); }
+  .hero .lead{ margin-top:18px; font-size:14.5px; color:var(--ink-soft); line-height:2.1; }
 
-  .eyebrow{ text-align:center; font-family:"Cormorant Garamond",serif; font-style:italic; font-size:14px; letter-spacing:.24em; color:var(--accent); text-transform:uppercase; }
-  .htitle{ text-align:center; font-size:20px; font-weight:600; letter-spacing:.04em; margin:6px 0 18px; }
+  .eyebrow{ text-align:center; font-family:"Cormorant Garamond",serif; font-style:italic; font-size:14px; letter-spacing:.22em; color:var(--accent); text-transform:uppercase; }
+  .htitle{ text-align:center; font-size:20px; font-weight:600; letter-spacing:.03em; line-height:1.7; margin:6px 0 16px; }
+  .sec p{ font-size:14.5px; line-height:2.15; }
+  .sec p + p{ margin-top:14px; }
+  .em{ color:var(--accent); font-weight:600; }
+  .center{ text-align:center; }
+  .bal{ text-align:center; text-wrap:balance; word-break:keep-all; max-width:19em; margin-left:auto; margin-right:auto; }
 
-  .check{ list-style:none; display:flex; flex-direction:column; gap:12px; }
-  .check li{ position:relative; padding-left:30px; font-size:15px; }
-  .check li::before{ content:"♡"; position:absolute; left:0; color:var(--accent); }
+  /* ③ 個別相談の中身リスト */
+  .pts{ list-style:none; display:flex; flex-direction:column; gap:11px; margin-top:6px; }
+  .pts li{ position:relative; padding-left:26px; font-size:14px; line-height:1.95; }
+  .pts li::before{ content:"♡"; position:absolute; left:0; top:1px; color:var(--accent); }
+  .sub-name{ text-align:center; font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin-bottom:2px; }
+  .wish{ list-style:none; text-align:center; margin:18px 0 6px; }
+  .wish li{ font-size:15px; line-height:2.25; color:var(--accent); letter-spacing:.02em; font-weight:600; }
+  .free{ display:inline-block; font-size:12.5px; font-weight:600; letter-spacing:.12em; color:#fff; background:linear-gradient(100deg,var(--accent2),var(--accent)); border-radius:999px; padding:5px 18px; margin-top:10px; box-shadow:0 8px 18px -10px rgba(180,90,130,.6); }
 
-  .promise{ text-align:center; font-size:16px; line-height:2.1; }
-  .promise .big{ font-size:19px; color:var(--accent); font-weight:600; }
+  /* ⑤ 受講生の変化 */
+  .ba{ border:1px solid var(--line); border-radius:16px; padding:12px; margin-bottom:14px; text-align:center; background:#fffafc; }
+  .ba .badge{ display:inline-block; font-size:12px; color:var(--accent); border:1px solid var(--line); border-radius:999px; padding:5px 15px; margin-bottom:10px; }
+  .ba img{ width:74%; max-width:260px; height:auto; display:block; margin:0 auto; border-radius:10px; }
+  .ba .cap{ font-size:13px; color:var(--ink-soft); margin-top:11px; line-height:1.85; }
+  .ba .cap b{ color:var(--accent); font-weight:600; font-size:15px; }
+  .voice{ font-size:13.5px; background:#fffafc; border-left:3px solid var(--accent2); border-radius:8px; padding:13px 15px; margin-bottom:10px; color:#5d4d54; line-height:2; }
+  .voice .who{ display:block; margin-top:8px; font-size:12px; color:var(--ink-soft); text-align:right; }
 
-  .sci{ display:flex; flex-direction:column; gap:12px; }
-  .sci .item{ background:#fdf2f6; border:1px solid #f2dbe4; border-radius:14px; padding:13px 15px; font-size:13.5px; line-height:1.9; }
-  .sci .item b{ color:var(--accent); }
-  .sci-note{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; text-align:center; }
+  /* ④ 申し込みフォーム */
+  .cta-lead{ text-align:center; font-size:15.5px; line-height:2.15; margin-bottom:6px; }
+  .field{ margin-bottom:14px; }
+  .field > label{ display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+  .field > label .opt{ font-weight:400; font-size:11px; color:var(--ink-soft); margin-left:5px; }
+  .field .hint{ font-size:11px; color:var(--ink-soft); margin-top:5px; line-height:1.8; }
+  .kibou{ display:flex; align-items:center; gap:9px; margin-bottom:8px; }
+  .kibou .kl{ flex:none; width:58px; font-size:12px; color:var(--ink-soft); }
+  input[type=text], input[type=email], textarea{ width:100%; font-family:"Shippori Mincho",serif; font-size:15px; color:var(--ink);
+    border:1px solid var(--line); border-radius:12px; background:#fffafc; padding:11px 13px; }
+  textarea{ min-height:74px; resize:vertical; line-height:1.8; }
+  input:focus, textarea:focus{ outline:none; border-color:var(--accent); background:#fff; }
+  .submit{ display:block; width:100%; font-family:"Shippori Mincho",serif; font-size:15.5px; font-weight:600; color:#fff;
+    border:none; border-radius:14px; padding:16px; cursor:pointer; margin-top:6px;
+    background:linear-gradient(100deg,var(--accent2),var(--accent)); box-shadow:0 14px 28px -14px rgba(180,90,130,.6); }
+  .submit:active{ transform:translateY(1px); } .submit:disabled{ opacity:.6; }
+  .form-note{ font-size:11px; color:var(--ink-soft); margin-top:11px; line-height:1.8; text-align:center; }
+  .thanks{ display:none; text-align:center; padding:8px 4px; }
+  .thanks .big{ font-size:17px; font-weight:600; color:var(--accent); margin-bottom:10px; }
+  .thanks p{ font-size:13.5px; line-height:2; }
 
-  .offer{ background:linear-gradient(160deg,#fdeef3,#f8dde7); border:1px solid #f0cdd9; }
-  .offer .tag{ display:inline-block; font-size:12px; letter-spacing:.12em; color:#fff; background:var(--accent); border-radius:999px; padding:5px 14px; }
-  .offer dl{ margin-top:14px; }
-  .offer dt{ font-weight:600; color:var(--accent); font-size:13px; margin-top:12px; letter-spacing:.06em; }
-  .offer dd{ font-size:14px; }
-  .offer .fill{ background:#fff6fa; border:1px dashed #e6b9cf; border-radius:10px; padding:8px 12px; font-size:12px; color:#a06; margin-top:10px; }
-
-  .voice{ font-size:14px; background:#fffafc; border-left:3px solid var(--accent2); border-radius:8px; padding:12px 15px; margin-bottom:10px; color:#5d4d54; }
-  .voice .who{ display:block; margin-top:6px; font-size:12px; color:var(--ink-soft); }
-
-  .prof{ text-align:center; }
-  .prof .ph{ width:96px;height:96px;border-radius:50%;margin:0 auto 14px;position:relative;overflow:hidden;
-    background:linear-gradient(160deg,var(--accent2),var(--accent)); box-shadow:0 10px 24px -10px var(--accent); }
-  .prof .ph .em{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:32px; color:#fff; }
-  .prof .ph img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .prof .nm{ font-size:16px; font-weight:600; }
-  .prof p{ font-size:14px; color:var(--ink-soft); margin-top:10px; text-align:left; }
-
-  .cta{ text-align:center; padding:34px 24px; }
-  .cta .lead{ font-size:16px; line-height:2; margin-bottom:18px; }
-  .btn{ display:block; text-decoration:none; color:#fff; font-weight:700; font-size:16px; letter-spacing:.04em;
-    background:linear-gradient(135deg,var(--accent2),var(--accent)); border-radius:999px; padding:17px; margin:0 8px;
-    box-shadow:0 14px 30px -10px rgba(210,120,154,.6); }
-  .setup{ margin:18px 14px 0; font-size:11px; color:#b08a96; background:rgba(255,255,255,.6); border:1px dashed #e6c4d2; border-radius:12px; padding:10px 12px; line-height:1.8; }
+  .foot{ text-align:center; margin-top:30px; font-size:12px; color:var(--ink-soft); }
+  .foot .fmark{ font-family:"Cormorant Garamond",serif; font-style:italic; font-size:16px; color:var(--accent); }
+  .draftnote{ text-align:center; font-size:11px; color:#c59db0; margin:14px 16px 0; line-height:1.85; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
+  <!-- ① 深い診断を受け取ったことを肯定 -->
   <header class="hero">
     <div class="brand">Be Grace</div>
-    <div class="ph"><span class="em">🤍</span><img src="profile.jpg" alt="なお" onerror="this.remove()"></div>
-    <h1>カラダを整えると、<br>心まで、<span class="em">ふっとゆるむ</span>。</h1>
-    <div class="lead">姿勢・呼吸・めぐりが整うと、<br>毎日が軽くなって、自分にやさしくなれます。</div>
+    <div class="eyebrow">YOUR BODY'S VOICE</div>
+    <h1>カラダの声を、受け取ってくれて<br><span class="em">ありがとうございます。</span></h1>
+    <div class="lead">ここまで進んだあなたは、もう<br>「本当の自分を、整えたい」と感じはじめています。<br>その気持ちは、とても大切なサインです。</div>
   </header>
 
+  <!-- ② 診断でわかるのは傾向まで（なお様の言葉） -->
   <section class="sec">
-    <div class="eyebrow">Are you…</div>
-    <div class="htitle">こんな願い、ありませんか？</div>
-    <ul class="check">
-      <li>いくつになっても、美しく・若くありたい</li>
-      <li>毎日コツコツ、続けられる私でいたい</li>
-      <li>もっと心地よく、機嫌よくいたい</li>
-      <li>疲れに負けない、軽やかな自分でいたい</li>
-      <li>本来の輝きを、取り戻したい</li>
+    <div class="eyebrow">Here…</div>
+    <div class="htitle">でも、診断でわかるのは、<br>今のあなたの“傾向”まで。</div>
+    <p class="center">同じタイプでも、<br>カラダのクセも、毎日の過ごし方も、<br>整え方は人それぞれです。</p>
+    <p class="center">ここから先は、<br><span class="em">あなたに合う整え方</span>へ進んでいきましょう。</p>
+  </section>
+
+  <!-- ③ プライベートセッション（なお様の言葉） -->
+  <section class="sec">
+    <div class="eyebrow">Private Session</div>
+    <div class="sub-name">未来のカラダを整える</div>
+    <div class="htitle">プライベートセッション</div>
+    <div class="center"><span class="free">無料</span></div>
+    <p class="bal">診断結果をもとに、今のあなたに合った整え方や、これからどんなふうにカラダを<wbr>育てていくといいのかを、お伝えします。</p>
+    <p class="bal">今のあなたに合う整え方を知ることで、<span class="em">これからの自分が、楽しみになる時間</span>です。</p>
+    <ul class="wish">
+      <li>もっと綺麗になりたい。</li>
+      <li>もっと軽やかに動きたい。</li>
+      <li>好きな服を、もっと楽しみたい。</li>
+      <li>年齢を重ねるほど、自分を好きでいたい。</li>
+      <li>心も軽やかに、自分らしく生きたい。</li>
     </ul>
+    <p class="center">そんな未来に向けて、<br>今のあなたに必要な一歩を、いっしょに見つけていきます。</p>
   </section>
 
-  <section class="sec">
-    <div class="eyebrow">Be Grace</div>
-    <div class="htitle">あなたの「ありたい」は、叶います</div>
-    <p class="promise">カラダが整うと、つやも、軽やかさも戻ってくる。<br><span class="big">いくつになっても、美しく、しなやかに。</span><br>毎日が心地よくなって、<br>笑顔が、もっと増えていきます。</p>
-  </section>
-
-  <section class="sec">
-    <div class="eyebrow">Science</div>
-    <div class="htitle">なぜ、“カラダから”整えるの？</div>
-    <div class="sci">
-      <div class="item"><b>姿勢</b>を整えると、気分も思考も上向く。猫背は気持ちまで沈ませると報告されています（身体心理学）。</div>
-      <div class="item"><b>ゆっくりの呼吸</b>は、自律神経をやさしく整える。たった1回でも、心が落ち着く。</div>
-      <div class="item"><b>首・肩のこり</b>は、がんばりすぎ・緊張のサイン。ゆるめると、ふっと軽くなる。</div>
-      <div class="item"><b>触れること</b>で、ストレスホルモンが下がり、安心のホルモンが出る。手当ては、科学。</div>
-    </div>
-    <div class="sci-note">※自己理解・健康増進のための情報で、医療的な診断・治療ではありません。</div>
-  </section>
-
-  <section class="sec offer">
-    <div class="eyebrow">Menu</div>
-    <div class="htitle">Be Grace のセルフケア</div>
-    <span class="tag">個別 / セミナー</span>
-    <dl>
-      <dt>こんな時間です</dt>
-      <dd>カラダをやさしく整えて、本来の軽やかさを取り戻す時間。〔ここに内容を入れる〕</dd>
-      <dt>こんな方へ</dt>
-      <dd>がんばってきた自分を、いたわってあげたい人へ。〔対象を入れる〕</dd>
-      <dt>かたち・料金</dt>
-      <dd>〔個別 or セミナー／オンライン or 対面／時間・料金を入れる〕</dd>
-    </dl>
-    <div class="fill">🔧 設置メモ：内容・対象・料金は、決まったらここに（個別／セミナー、どちらでもこの枠でOK）。</div>
-  </section>
-
+  <!-- ⑤ 受講生の変化（証拠） -->
   <section class="sec">
     <div class="eyebrow">Voice</div>
-    <div class="htitle">受けた方の変化</div>
-    <div class="voice">〔お客様の声をここに〕<span class="who">— 〔お名前・年代〕</span></div>
-    <div class="voice">〔お客様の声をここに〕<span class="who">— 〔お名前・年代〕</span></div>
-    <div class="sci-note">※声が集まったら差し替え。最初は1〜2件でもOK。</div>
+    <div class="htitle">実際に、変わっていった方々。</div>
+    <div class="ba">
+      <span class="badge">半年での変化</span>
+      <img src="henka1.jpg" alt="半年での変化（Before / After）">
+      <div class="cap">30代 M.K様<br>肋骨まわり <b>−7㎝</b></div>
+    </div>
+    <div class="ba">
+      <span class="badge">2ヶ月半での変化</span>
+      <img src="henka2.jpg" alt="2ヶ月半での変化（Before / After）">
+      <div class="cap">M.M様<br>立ち仕事の足の痛みが <b>消えた</b></div>
+    </div>
+    <div class="voice">be graceメソッドを始めて2ヶ月。今まで自分の体の中まで気を配ることはありませんでしたが、「体ってすごい！」と改めて感じています。やればやるほど成果が出ることも知りました。<span class="who">— 40代・T.N様</span></div>
+    <div class="voice">焦っていた私が、ゆっくりやろうと思えたら、側湾していた背骨が真っ直ぐに。履けなくなったスカートもはけました。<span class="who">— 30代・S.O様</span></div>
   </section>
 
-  <section class="sec prof">
-    <div class="eyebrow">Profile</div>
-    <div class="ph"><span class="em">🤍</span><img src="profile.jpg" alt="なお" onerror="this.remove()"></div>
-    <div class="nm">なお｜整体・セルフケア</div>
-    <p>カラダから整えると、心も毎日も変わる——それを、自分の人生で実感してきました。がんばってきたあなたが、やさしく自分に還れる時間を、心を込めてお届けします。〔ここに物語：なぜこの道へ／想い〕</p>
+  <!-- ④ CTA＋申し込みフォーム -->
+  <section class="sec">
+    <div class="eyebrow">For you</div>
+    <div class="cta-lead">あなたのカラダは今、何を求めていますか。<br><span class="em">あなただけの読み解き</span>を、<br>受け取りに来てください🤍</div>
+    <div id="formArea">
+      <div class="field"><label for="f_name">お名前</label><input type="text" id="f_name" placeholder="例：なお" /></div>
+      <div class="field">
+        <label>ご希望日時</label>
+        <div class="kibou"><span class="kl">第1希望</span><input type="text" id="f_k1" placeholder="例：7月8日（火）10:00〜12:00" /></div>
+        <div class="kibou"><span class="kl">第2希望</span><input type="text" id="f_k2" placeholder="例：7月10日（木）20:00以降" /></div>
+        <div class="kibou"><span class="kl">第3希望</span><input type="text" id="f_k3" placeholder="例：土日の午前中　など" /></div>
+        <div class="hint">※だいたいのご希望で大丈夫です🤍</div>
+      </div>
+      <div class="field"><label for="f_mail">メール <span class="opt">（任意）</span></label><input type="email" id="f_mail" placeholder="例：you@example.com" /></div>
+      <div class="field"><label for="f_tel">電話 <span class="opt">（任意）</span></label><input type="text" id="f_tel" inputmode="tel" placeholder="例：090-1234-5678" /></div>
+      <div class="field"><label for="f_msg">ひとこと・ご質問 <span class="opt">（任意）</span></label>
+        <textarea id="f_msg" placeholder="今いちばん気になっていること、聞いてみたいことなど、自由にどうぞ。"></textarea></div>
+      <button class="submit" id="submitBtn">♡ プライベートセッションを申し込む</button>
+      <div class="form-note">※送信後、なおから日程調整のご連絡をさせていただきます。</div>
+    </div>
+    <div class="thanks" id="thanks">
+      <div class="big">お申し込み、ありがとうございます🤍</div>
+      <p>たしかに受け取りました。<br>このあと、なおから日程調整のご連絡をさせていただきます。</p>
+    </div>
   </section>
 
-  <section class="cta">
-    <div class="lead">あなたも、<br>カラダから、やさしく始めませんか。</div>
-    <a class="btn" href="#" data-set="申込先URL（LINE/予約フォーム）">♡ 受けてみる・相談する</a>
-  </section>
-
-  <div class="setup">🔧 設置メモ：〔　〕の中身（内容・料金・声・物語・申込先）を入れたら完成。潜在意識ワードなし＝YouTube/セルフケア向け。WordPressに移せば文字は自分で編集可。</div>
+  <div class="foot"><span class="fmark">Be Grace</span><br>あなただけの、カラダの読み解きを。</div>
 
 </div>
-<div class="bg-copyright" style="text-align:center;font-size:11px;color:#9a9a9a;opacity:.85;padding:20px 12px 24px;font-family:-apple-system,sans-serif;">© Be Grace</div>
+
+<script>
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbwgcIrNCpjRZMeB069gP9xD5MM0pzHrhCMXfYXR6Q_Mcs1AtCrlZZ8bUJnj1ez2MdrFoA/exec";
+  var btn = document.getElementById("submitBtn");
+  function done(){
+    document.getElementById("formArea").style.display = "none";
+    document.getElementById("thanks").style.display = "block";
+  }
+  btn.addEventListener("click", function(){
+    var name = document.getElementById("f_name").value.trim();
+    var k1 = document.getElementById("f_k1").value.trim();
+    var k2 = document.getElementById("f_k2").value.trim();
+    var k3 = document.getElementById("f_k3").value.trim();
+    var mail = document.getElementById("f_mail").value.trim();
+    var tel = document.getElementById("f_tel").value.trim();
+    var msg = document.getElementById("f_msg").value.trim();
+    if(!name){ alert("お名前を入れてくださいね🤍"); return; }
+    if(!k1){ alert("第1希望の日時を入れてくださいね🤍"); return; }
+    btn.disabled = true; btn.textContent = "送信中…";
+    var data = {
+      "種類": "プライベートセッション（カラダ診断・care）",
+      "お名前": name,
+      "第1希望": k1, "第2希望": (k2||"なし"), "第3希望": (k3||"なし"),
+      "メール": (mail||"なし"),
+      "電話": (tel||"なし"),
+      "ひとこと": (msg||"なし")
+    };
+    fetch(ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)}).then(done).catch(done);
+  });
+</script>
 </body>
 </html>
